@@ -1,0 +1,675 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="POP//LAB — Experimental sparkling drinks."
+  >
+
+  <title>POP//LAB — Make Some Noise</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+
+  <!-- LOADER -->
+
+  <div class="loader">
+
+    <div class="loader-inner">
+
+      <div class="loader-brand">
+        POP<span>//</span>LAB
+      </div>
+
+      <div class="loader-counter">
+        <span id="loaderNumber">0</span>%
+      </div>
+
+      <div class="loader-bar">
+        <span></span>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- NAVIGATION -->
+
+  <header class="nav">
+
+    <a href="#top" class="brand magnetic">
+      POP<span>//</span>LAB
+    </a>
+
+    <nav class="desktop-nav">
+
+      <a href="#manifesto">Manifesto</a>
+      <a href="#flavours">Flavours</a>
+      <a href="#lab">The Lab</a>
+
+    </nav>
+
+    <button
+      class="menu-button magnetic"
+      aria-label="Open menu"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+  </header>
+
+
+  <!-- MOBILE MENU -->
+
+  <div class="mobile-menu">
+
+    <div class="mobile-menu-links">
+
+      <a href="#manifesto">01 / Manifesto</a>
+      <a href="#flavours">02 / Flavours</a>
+      <a href="#lab">03 / The Lab</a>
+      <a href="#shop">04 / Shop</a>
+
+    </div>
+
+    <div class="mobile-menu-footer">
+      POP//LAB — EST. 2026
+    </div>
+
+  </div>
+
+
+  <main id="top">
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+      <div class="hero-background-text">
+        MAKE<br>
+        SOME<br>
+        NOISE
+      </div>
+
+
+      <div class="hero-copy">
+
+        <div class="eyebrow">
+          <span>01</span>
+          EXPERIMENTAL SPARKLING DRINKS
+        </div>
+
+        <h1>
+          MAKE
+          <span class="outline">SOME</span>
+          NOISE<span class="dot">.</span>
+        </h1>
+
+        <p>
+          Drinks for people who were never interested
+          in drinking quietly.
+        </p>
+
+        <a href="#flavours" class="hero-button magnetic">
+          <span>ENTER THE LAB</span>
+          <span class="arrow">↘</span>
+        </a>
+
+      </div>
+
+
+      <!-- THREE.JS CANVAS -->
+
+      <div class="canvas-wrap">
+        <canvas id="scene"></canvas>
+      </div>
+
+
+      <div class="hero-meta">
+
+        <div>
+          <span>SCROLL</span>
+          <span class="scroll-line"></span>
+        </div>
+
+        <div>
+          VOL. 01<br>
+          330 ML
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- MANIFESTO -->
+
+    <section class="manifesto" id="manifesto">
+
+      <div class="section-index">
+        02 / MANIFESTO
+      </div>
+
+      <div class="manifesto-content">
+
+        <p class="small-label">
+          WE DON'T MAKE NORMAL DRINKS.
+        </p>
+
+        <h2>
+          BOLD
+          <span>FLAVOUR.</span>
+          <br>
+          LOUD
+          <span>ENERGY.</span>
+          <br>
+          ZERO
+          <span>BOREDOM.</span>
+        </h2>
+
+        <div class="manifesto-bottom">
+
+          <p>
+            POP//LAB started with one unreasonable question:
+            why should a can look and taste like everything
+            else on the shelf?
+          </p>
+
+          <div class="stamp">
+            <span>NO</span>
+            <span>RULES</span>
+            <span>LAB</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- FLAVOURS -->
+
+    <section class="flavours" id="flavours">
+
+      <div class="flavour-header">
+
+        <div class="section-index">
+          03 / FLAVOUR ARCHIVE
+        </div>
+
+        <p>
+          Swipe / drag / scroll
+        </p>
+
+      </div>
+
+
+      <div class="flavour-track">
+
+        <article
+          class="flavour-card orange"
+          data-flavour="ORANGE / 01"
+        >
+
+          <div class="card-top">
+            <span>01</span>
+            <span>330 ML</span>
+          </div>
+
+          <div class="fruit-orb"></div>
+
+          <div class="can-label">
+            POP<br>
+            <strong>//</strong><br>
+            ORANGE
+          </div>
+
+          <div class="card-bottom">
+
+            <h3>ORANGE<br>RIOT</h3>
+
+            <span>Bright / Tangy / Electric</span>
+
+          </div>
+
+        </article>
+
+
+
+        <article
+          class="flavour-card violet"
+          data-flavour="GRAPE / 02"
+        >
+
+          <div class="card-top">
+            <span>02</span>
+            <span>330 ML</span>
+          </div>
+
+          <div class="fruit-orb"></div>
+
+          <div class="can-label">
+            POP<br>
+            <strong>//</strong><br>
+            GRAPE
+          </div>
+
+          <div class="card-bottom">
+
+            <h3>GRAPE<br>GLITCH</h3>
+
+            <span>Deep / Juicy / Strange</span>
+
+          </div>
+
+        </article>
+
+
+
+        <article
+          class="flavour-card lime"
+          data-flavour="LIME / 03"
+        >
+
+          <div class="card-top">
+            <span>03</span>
+            <span>330 ML</span>
+          </div>
+
+          <div class="fruit-orb"></div>
+
+          <div class="can-label">
+            POP<br>
+            <strong>//</strong><br>
+            LIME
+          </div>
+
+          <div class="card-bottom">
+
+            <h3>LIME<br>CHAOS</h3>
+
+            <span>Sharp / Fresh / Unhinged</span>
+
+          </div>
+
+        </article>
+
+
+
+        <article
+          class="flavour-card pink"
+          data-flavour="BERRY / 04"
+        >
+
+          <div class="card-top">
+            <span>04</span>
+            <span>330 ML</span>
+          </div>
+
+          <div class="fruit-orb"></div>
+
+          <div class="can-label">
+            POP<br>
+            <strong>//</strong><br>
+            BERRY
+          </div>
+
+          <div class="card-bottom">
+
+            <h3>BERRY<br>ERROR</h3>
+
+            <span>Sweet / Wild / Unexpected</span>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- BIG TYPE SECTION -->
+
+    <section class="type-break">
+
+      <div class="marquee">
+
+        <div>
+          TASTE&nbsp; LOUD&nbsp; — &nbsp;
+          TASTE&nbsp; LOUD&nbsp; — &nbsp;
+          TASTE&nbsp; LOUD&nbsp; —
+        </div>
+
+      </div>
+
+      <div class="type-break-content">
+
+        <span>THE RECIPE</span>
+
+        <h2>
+          LESS
+          <i>RULES.</i>
+          MORE
+          <i>FLAVOUR.</i>
+        </h2>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- LAB -->
+
+    <section class="lab" id="lab">
+
+      <div class="lab-intro">
+
+        <div class="section-index">
+          04 / THE LAB
+        </div>
+
+        <h2>
+          BUILT<br>
+          <span>DIFFERENT.</span>
+        </h2>
+
+      </div>
+
+
+      <div class="lab-grid">
+
+        <div class="lab-item">
+
+          <div class="lab-number">01</div>
+
+          <div class="lab-icon bubble-icon">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+
+          <h3>BIG BUBBLES</h3>
+
+          <p>
+            Crisp carbonation engineered for a
+            satisfying first crack.
+          </p>
+
+        </div>
+
+
+
+        <div class="lab-item offset">
+
+          <div class="lab-number">02</div>
+
+          <div class="lab-icon pulse-icon">
+            <span></span>
+          </div>
+
+          <h3>LOUD FLAVOUR</h3>
+
+          <p>
+            Fruit-forward combinations designed
+            to hit fast and finish clean.
+          </p>
+
+        </div>
+
+
+
+        <div class="lab-item">
+
+          <div class="lab-number">03</div>
+
+          <div class="lab-icon grid-icon">
+            <span></span>
+          </div>
+
+          <h3>SMALL BATCH</h3>
+
+          <p>
+            Every recipe starts as an experiment.
+            Only the strange ones survive.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- INTERACTIVE QUOTE -->
+
+    <section class="quote-section">
+
+      <div class="quote-orb"></div>
+
+      <div class="quote-text">
+
+        <span>POP//LAB PHILOSOPHY</span>
+
+        <h2>
+          “NORMAL
+          <em>IS</em>
+          <br>
+          A BORING
+          <em>FLAVOUR.</em>”
+        </h2>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- SHOP -->
+
+    <section class="shop" id="shop">
+
+      <div class="shop-header">
+
+        <div class="section-index">
+          05 / GET SOME
+        </div>
+
+        <h2>
+          PICK YOUR<br>
+          <span>CHAOS.</span>
+        </h2>
+
+      </div>
+
+
+      <div class="shop-grid">
+
+        <div class="shop-card">
+
+          <div class="shop-card-top">
+            <span>01</span>
+            <span>6 PACK</span>
+          </div>
+
+          <div class="mini-can orange-can">
+            POP<br>
+            //
+          </div>
+
+          <h3>ORANGE RIOT</h3>
+
+          <p>₹599 / 6 × 330 ML</p>
+
+          <button class="add-button magnetic">
+            ADD TO LAB
+            <span>+</span>
+          </button>
+
+        </div>
+
+
+
+        <div class="shop-card featured">
+
+          <div class="shop-card-top">
+            <span>02</span>
+            <span>BESTSELLER</span>
+          </div>
+
+          <div class="mini-can violet-can">
+            POP<br>
+            //
+          </div>
+
+          <h3>GRAPE GLITCH</h3>
+
+          <p>₹599 / 6 × 330 ML</p>
+
+          <button class="add-button magnetic">
+            ADD TO LAB
+            <span>+</span>
+          </button>
+
+        </div>
+
+
+
+        <div class="shop-card">
+
+          <div class="shop-card-top">
+            <span>03</span>
+            <span>6 PACK</span>
+          </div>
+
+          <div class="mini-can lime-can">
+            POP<br>
+            //
+          </div>
+
+          <h3>LIME CHAOS</h3>
+
+          <p>₹599 / 6 × 330 ML</p>
+
+          <button class="add-button magnetic">
+            ADD TO LAB
+            <span>+</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- FINAL -->
+
+    <section class="final">
+
+      <div class="final-bg">
+        POP
+      </div>
+
+      <div class="final-content">
+
+        <p>
+          READY?
+        </p>
+
+        <h2>
+          MAKE SOME
+          <span>NOISE.</span>
+        </h2>
+
+        <a href="#top" class="final-button magnetic">
+          BACK TO TOP
+          <span>↑</span>
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-brand">
+      POP<span>//</span>LAB
+    </div>
+
+    <div class="footer-links">
+
+      <a href="#">Instagram</a>
+      <a href="#">Contact</a>
+      <a href="#">Terms</a>
+
+    </div>
+
+    <div class="footer-copy">
+      © 2026 POP//LAB
+    </div>
+
+  </footer>
+
+
+
+  <!-- GSAP -->
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js">
+  </script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js">
+  </script>
+
+
+  <!-- THREE.JS -->
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js">
+  </script>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
